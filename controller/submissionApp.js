@@ -11,8 +11,8 @@ var submissionVid = module.exports = {
 	showSubmissions: function(req, res){
 		var vids = modelSubmissions.submissionInfo();
 		var emptyArr = [];
-		for (var i = 0; i < vids.length; i++) {
-			emptyArr.push([vids[i]],vids[i+1] || undefined)
+		for (var i = 0; i < vids.length; i+=2) {
+			emptyArr.push([vids[i],vids[i+1]])
 		};
 		res.render('viewSubmissions', { viewSub : emptyArr});
 	}

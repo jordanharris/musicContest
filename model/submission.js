@@ -3,7 +3,7 @@ var formApplication = [];
 var submissionData = module.exports = {
 
 	submissionEvents: function(formSub){
-		if(formApplication.length <  4){
+		if(formApplication.length <  8){
 			formApplication.push(formSub);
 		}
 	},

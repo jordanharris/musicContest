@@ -3,3 +3,13 @@ h2,
 p {
   color: #fff;
 }
+p {
+  margin: 10px 0px 10px 0px;
+}
+iframe {
+  width: 100%;
+}
+.vsButtons {
+  margin-top: 170px;
+  text-align: center;
+}
