@@ -1,0 +1,31 @@
+extends layout
+
+block links
+  link(rel="stylesheet" href="../stylesheets/submitEntry.css")
+
+block content
+  .container
+    .row
+      form.form-horizontal.col-md-12.col-md-offset-2.formSubmit(action="/submissions" method="post" role='form')
+        .form-group
+            label.col-sm-2.control-label(for='inputName3') Name
+            .col-sm-4
+              input#inputName3.form-control(type='text', name="submissions[name]" placeholder='Name')
+          .form-group
+            label.col-sm-2.control-label(for='inputURL3') URL for Video
+            .col-sm-4
+              input#inputURL3.form-control(type='text', name="submissions[url]" placeholder='URL')
+          .form-group
+            label.col-sm-2.control-label(for='inputTitle3') Video Title
+            .col-sm-4
+              input#inputTitle3.form-control(type='text', name="submissions[title]" placeholder='Title')
+          .form-group
+            label.col-sm-2.control-label(for='inputDescription3') Description
+            .col-sm-4
+              textarea#inputDescription3.form-control(name="submissions[description]" placeholder='Description')
+          .form-group
+            .col-sm-offset-2.col-sm-10.buttonWrap
+              button.btn.btn-info.buttonSubmit(type='submit') Submit
+
+block scripts
+  script(src='/javascripts/submitEntry.js')

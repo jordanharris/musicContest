@@ -1,0 +1,13 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+label {
+  color: #4169e1;
+}
+.buttonWrap {
+  margin-left: 28%;
+}
+.formSubmit {
+  margin-top: 20%;
+}

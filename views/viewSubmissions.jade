@@ -1,0 +1,22 @@
+extends layout
+
+block links
+  link(rel="stylesheet" href="../stylesheets/submissions.css")
+block content
+  .container
+    .row
+      for subs in viewSub
+        .col-md-6
+          h1 #{subs[0].name}
+          iframe(width="560" height="315" src="http://www.youtube.com/embed/"+subs[0].url.slice(31) frameborder="0" allowfullscreen)
+          h2 #{subs[0].title}
+          p #{subs[0].description}
+          button.btn.btn-succes.leftButton Vote
+          p VS.
+          button.btn.btn-success.rightButton Vote
+          h1 #{subs[1].name}
+          iframe(width="560" height="315" src="http://www.youtube.com/embed/"+subs[1].url.slice(31) frameborder="0" allowfullscreen)
+          h2 #{subs[1].title}
+          p #{subs[1].description}
+block scripts
+  script(src='/javascripts/submissions.js')

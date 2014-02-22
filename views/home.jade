@@ -1,0 +1,17 @@
+extends layout
+block links
+  link(rel="stylesheet" href="../stylesheets/style.css")
+block content
+  .container
+    .row
+      .col-md-12
+        h1.titleHeader Music Video Contest
+    .row
+      .col-md-12
+        p.contestDescription Welcome to the only site on planet earth that allows you to submit music videos and compete for the best music video of all-time!
+    .row
+      .col-md-3.col-md-offset-4
+        a(href='/entrysubmission')
+          button.btn.btn-primary.btn-lg.enterButton Enter
+block scripts
+  script(src='/javascripts/main.js')
